@@ -8,7 +8,7 @@ In this project Ill try to create order management system.
 
 Site published at: https://brokenfingers.github.io/manage-prototype/
 
-
+Design: [Kitchen management](https://www.ucs.lt/en/moduliai/kitchen-display-system-kitchen-order-management/)
 
 ## Project features
 

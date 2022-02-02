@@ -1,23 +1,29 @@
 body {
     display: grid;
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 100%;
     grid-template-columns: 20px 1fr 20px;
     grid-template-areas: '. main .';
 }
 
 main {
-    display: main;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
     grid-area: main;
     padding: 20px;
-    background-color: aqua;
+    background-color: #382424;
+}
+
+main > * {
+    margin-bottom: 10px;
 }
 
 .orders-pool {
     display: grid;
     width: 100%;
+    height: 50vh;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
 }
@@ -57,6 +63,26 @@ main {
 
 .order > .bottom-bar {
     display: flex;
+    padding: 0 10px;
     justify-content: space-between;
     background-color: #ddd;
+}
+
+.order-options > .pizza-menu,
+.sushi-menu {
+    display: grid;
+    list-style-type: none;
+    margin-bottom: 5px;
+    gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pizza-menu > li,
+.sushi-menu > li {
+    /* text-align: center; */
+    padding: 3px 3px;
+    background-color: #999;
+
+    cursor: pointer;
+    font-weight: bold;
 }

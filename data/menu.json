@@ -1,22 +1,32 @@
 [
     {
-        "name": "Amerikietiška",
+        "name": "amerikietiška",
         "id": 54651321,
         "type": "pizza"
     },
     {
-        "name": "Azijietiska",
+        "name": "azijietiska",
         "id": 54651115,
         "type": "pizza"
     },
     {
-        "name": "Rukola",
+        "name": "rukola",
         "id": 54651888,
         "type": "pizza"
     },
     {
-        "name": "Barbekina",
+        "name": "barbekina",
         "id": 54651777,
+        "type": "pizza"
+    },
+    {
+        "name": "egzotiška",
+        "id": 54651457,
+        "type": "pizza"
+    },
+    {
+        "name": "havaju",
+        "id": 5467947,
         "type": "pizza"
     },
     {

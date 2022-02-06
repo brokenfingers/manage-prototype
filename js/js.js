@@ -1,24 +1,47 @@
 let keyboardString = "1234567890qwertyuiopasdfghjklzxcvbnm";
 let menu = [];
+let filteredMenu = [];
+let keyboardFilter = '';
 
-function layoutKeyboard(string, keyboardParameter) {
+function layoutKeyboard(keyTitles, keysInRow) {
     const keyboard = document.querySelector('.keyboard');
     let lastValue = 0;
-    for (let n = 0; n < keyboardParameter.length; n++) {
+    for (let n = 0; n < keysInRow.length; n++) {
         let row = document.createElement('div');
         row.classList.add("keyboard-row");
         keyboard.appendChild(row)
-        for (let i = lastValue; i < keyboardParameter[n]; i++) {
+        for (let i = lastValue; i < lastValue + keysInRow[n]; i++) {
             const keyBtn = document.createElement('div');
-            keyBtn.textContent = string[i];
+            keyBtn.textContent = keyTitles[i];
+            keyBtn.classList.add('keyboard-button');
+            keyBtn.addEventListener("click", onkeyBtn);
             row.appendChild(keyBtn);
         }
-        lastValue = keyboardParameter[n];
+        lastValue += keysInRow[n];
     }
 
 }
 
-layoutKeyboard(keyboardString, [10, 20, 29, 36]);
+function onkeyBtn() {
+    keyboardFilter += this.textContent;
+    filterMenu(menu, keyboardFilter);
+    resetMenu();
+    createMenu(filteredMenu);
+}
+
+function resetMenu() {
+    const pizzaMenu = document.querySelector(".pizza-menu");
+    const sushiMenu = document.querySelector(".sushi-menu");
+    pizzaMenu.innerHTML = '';
+    sushiMenu.innerHTML = '';
+
+}
+
+function filterMenu(obj, keyword) {
+    filteredMenu = obj.filter(itm => itm.name.includes(keyword));
+}
+
+layoutKeyboard(keyboardString, [10, 10, 9, 7]);
 
 async function loadMenu() {
     const requestUrl = './data/menu.json';

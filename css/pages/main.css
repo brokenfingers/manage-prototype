@@ -26,6 +26,15 @@ main > * {
     width: 100%;
 }
 
+.keyboard-button {
+    padding: 10px;
+    background-color: #999;
+    cursor: pointer;
+}
+.keyboard-button:hover {
+    background-color: #bbb;
+}
+
 .orders-pool {
     display: grid;
     width: 100%;

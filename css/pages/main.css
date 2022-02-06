@@ -2,8 +2,8 @@ body {
     display: grid;
     /* background-color: yellow; */
     width: 100%;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-areas: '. main .';
+    grid-template-columns: 1fr;
+    grid-template-areas: 'main';
 }
 
 main {
@@ -18,6 +18,12 @@ main {
 
 main > * {
     margin-bottom: 10px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .orders-pool {

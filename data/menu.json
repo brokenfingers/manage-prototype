@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Amerikietiška",
+        "id": 54651321,
+        "type": "pizza"
+    },
+    {
+        "name": "Azijietiska",
+        "id": 54651115,
+        "type": "pizza"
+    },
+    {
+        "name": "Rukola",
+        "id": 54651888,
+        "type": "pizza"
+    },
+    {
+        "name": "Barbekina",
+        "id": 54651777,
+        "type": "pizza"
+    },
+    {
+        "name": "S1",
+        "id": 54651145,
+        "type": "sushi"
+    },
+    {
+        "name": "S2",
+        "id": 54651146,
+        "type": "sushi"
+    },
+    {
+        "name": "S3",
+        "id": 54651427,
+        "type": "sushi"
+    },
+    {
+        "name": "S4",
+        "id": 54651175,
+        "type": "sushi"
+    }
+]
